@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Титульный лист</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+}
+
+/* UI панели */
+.ui {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.panel {
+    position: absolute;
+    width: 140px;
+    height: 80px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.panel::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60%;
+    height: 6px;
+    background: #38bdf8;
+    border-radius: 3px;
+}
+
+.panel::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 40%;
+    height: 6px;
+    background: #7dd3fc;
+    border-radius: 3px;
+}
+
+.p1 { top: 15%; left: 10%; }
+.p2 { top: 65%; left: 18%; }
+.p3 { top: 25%; right: 10%; }
+.p4 { bottom: 15%; right: 20%; }
+
+/* карточка */
+.container {
+    position: relative;
+    z-index: 1;
+    width: 600px; /* уменьшили */
+    padding: 40px; /* меньше воздуха внутри */
+    border-radius: 16px;
+    background: rgba(255,255,255,0.75); /* чуть прозрачнее */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #1f2937;
+}
+
+/* текст */
+.top {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.title {
+    margin: 30px 0 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+.topic {
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+}
+</style>
+
+</head>
+<body>
+
+<div class="ui">
+    <div class="panel p1"></div>
+    <div class="panel p2"></div>
+    <div class="panel p3"></div>
+    <div class="panel p4"></div>
+</div>
+
+<div class="container">
+
+    <div class="top">
+        Кыргыз Республикасынын Билим берүү жана илим министрлиги<br>
+        Б.Осмонов атындагы Жалал-Абад мамлекеттик университети<br>
+        Агрардык-техникалык институту<br>
+        Башкаруунун автоматташтырылган системасы кафедрасы
+    </div>
+
+    <div class="title">
+        КВАЛИФИКАЦИЯЛЫК ЖУМУШ
+    </div>
+
+    <div class="topic">
+        <b>Тема:</b>
+        Чакан кенсени автоматташтыруу учун бот<br>
+
+    </div>
+
+    <div class="info">
+        <b>Аткарган:</b>Кадырбеков Нуралы Таалайбекович <br>
+        <b>Илимий жетекчи:</b> Ы.М.Батырова
+    </div>
+
+    <div class="footer">
+        Манас, 2026-ж.
+    </div>
+
+    <button class="btn">Открыть проект</button>
+
+</div>
+
+</body>
+</html>
